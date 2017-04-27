@@ -1,0 +1,16 @@
+version: '2'
+services:
+    idas-mongodb:
+        image: mongo:3.2.10
+        ports:
+            - "27017:27017"
+        command: mongos --configdb idas-mongodb-config
+    idas-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    idas-mongodb-config:
+        image: mongo:3.2.10
+        container_name: idas-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

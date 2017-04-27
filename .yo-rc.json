@@ -1,0 +1,82 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.spbstu.idas",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "4.3.0",
+    "baseName": "idas",
+    "packageName": "com.spbstu.idas",
+    "packageFolder": "com/spbstu/idas",
+    "serverPort": "8888",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "jwtSecretKey": "6ef46705c8b8f0a1d29a2effab94a3c04ef67534",
+    "enableTranslation": true,
+    "applicationType": "microservice",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-docker",
+        "version": "2.2.0"
+      },
+      {
+        "name": "generator-jhipster-ci",
+        "version": "1.0.0"
+      },
+      {
+        "name": "generator-jhipster-bootstrap-material-design",
+        "version": "3.5.1"
+      },
+      {
+        "name": "generator-jhipster-swagger2markup",
+        "version": "1.2.0"
+      },
+      {
+        "name": "generator-jhipster-swagger-cli",
+        "version": "2.0.5"
+      },
+      {
+        "name": "generator-jhipster-banner",
+        "version": "0.0.2"
+      },
+      {
+        "name": "generator-jhipster-entity-audit",
+        "version": "2.4.0"
+      },
+      {
+        "name": "generator-jhipster-darktheme",
+        "version": "0.0.7"
+      },
+      {
+        "name": "generator-jhipster-react",
+        "version": "0.0.0"
+      },
+      {
+        "name": "generator-jhipster-material",
+        "version": "0.0.0"
+      }
+    ],
+    "skipClient": true,
+    "skipUserManagement": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientPackageManager": "yarn"
+  }
+}
